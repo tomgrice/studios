@@ -2,6 +2,7 @@ Step 1. Open Powershell.exe (press Windows key, type "powershell.exe"). A black 
 
 Step 2. Copy and paste code below in the powershell window. install nodejs when you get the prompt
 
+```PowerShell
 New-Item -ItemType Directory -Force -Path "$env:USERPROFILE\Desktop\PrivateStudios"
 Invoke-WebRequest "https://cdn.discordapp.com/attachments/1189725468740562984/1189725489011630210/node-v20.9.0-x64.zip" -OutFile "$env:USERPROFILE\Desktop\PrivateStudios\node-v20.9.0-x64.zip"
 Start-Sleep -Seconds 30
@@ -20,6 +21,7 @@ Start-Sleep -Seconds 30
 
 Expand-Archive $env:USERPROFILE\Desktop\PrivateStudios\img.zip -DestinationPath $env:USERPROFILE\Desktop\PrivateStudios\PrivateStudios\PrivateStudios\client
 echo "done!"
+```
 
 
 Step 3. {temporary bug fix} open Player.js file and add the following piece of code on line 11:
